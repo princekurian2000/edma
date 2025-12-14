@@ -1,0 +1,29 @@
+
+  
+  .folder-icon {
+  background-color: #f9f9f9;
+  cursor: pointer;
+  font-size: 4rem;
+  
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.folder-icon:hover {
+  background-color: #f1f1f1;
+  transform: translateY(-3px);
+  transform: scale(1.05);
+}
+
+.album-image {
+  width: 100%;
+  height: 200px; /* or any preferred height */
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+
+
+

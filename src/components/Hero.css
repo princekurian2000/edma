@@ -1,0 +1,31 @@
+.hero-container {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .hero-content p {
+    font-size: 1.25rem;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
+  .hero-content .btn {
+    background-color: #ff6f61; /* Customize the button color */
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-content .btn:hover {
+    background-color: #ff3d2e; /* Hover effect */
+  }
+  

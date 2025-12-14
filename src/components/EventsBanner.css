@@ -1,0 +1,5 @@
+.event-carousel-img {
+  height: 250px; /* Adjust to desired size */
+  object-fit: cover;
+  border-radius: 10px;
+}

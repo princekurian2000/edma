@@ -1,0 +1,129 @@
+.families-container {
+  padding: 20px;
+}
+
+.filters {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap; /* Filters stay in one line */
+  overflow-x: auto; /* Allow horizontal scroll if necessary */
+}
+
+.filters input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  min-width: 150px; /* Minimum width for the inputs */
+  white-space: nowrap; /* Prevent text overflow */
+}
+
+.family-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.family-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.family-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.family-header p {
+  margin: 5px 0;
+}
+
+.family-body {
+  display: none;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+}
+
+.family-body.expanded {
+  display: block;
+  max-height: 1000px; /* Adjust based on your content */
+  transition: max-height 0.5s ease-in;
+}
+
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Always 2 members per row */
+  gap: 10px;
+}
+
+.member-card {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  gap: 10px;
+}
+
+.member-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.member-info {
+  flex: 1;
+  padding: 5px;
+}
+
+.member-info p {
+  margin: 5px 0;
+}
+
+.member-card:hover {
+  background-color: #f1f1f1;
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+  .filters {
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+  }
+
+  .filters input {
+    min-width: 120px; /* Smaller inputs on small screens */
+    flex: 0 0 auto; /* Prevent inputs from growing */
+  }
+
+  .family-card {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .members-grid {
+    grid-template-columns: repeat(2, 1fr); /* Keep 2 members per row, even on small screens */
+  }
+}
+.pagination button {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #e0e0e0;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}

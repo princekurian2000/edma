@@ -1,0 +1,89 @@
+.wheel-container {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.winning-indicator {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.winning-indicator .pointer {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid red;
+}
+
+.winning-indicator .base {
+  width: 40px;
+  height: 10px;
+  background: #333;
+  border-radius: 5px;
+}
+
+.wheel-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  margin: 60px 0 30px;
+}
+
+.wheel {
+  transform-origin: 50% 50%;
+  margin: 0 auto;
+}
+
+
+.winner-display {
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2ecc71;
+  min-height: 40px;
+  text-align: center;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover:not(:disabled) {
+  background: #2980b9;
+}
+
+button:disabled {
+  background: #95a5a6;
+  cursor: not-allowed;
+}
+
+
+.arrow-indicator {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}

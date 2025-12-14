@@ -1,0 +1,81 @@
+/* Calendar wrapper */
+.react-calendar {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Navigation arrows and labels */
+.react-calendar__navigation button {
+  color: #007bff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: none;
+  border: none;
+}
+
+.react-calendar__navigation button:disabled {
+  color: #ccc;
+}
+
+/* Day tiles */
+.react-calendar__tile {
+  padding: 10px 6px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Today's date */
+.react-calendar__tile--now {
+  background: #e3f2fd !important;
+  color: #1976d2 !important;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+/* Selected date */
+.react-calendar__tile--active {
+  background: #1976d2 !important;
+  color: #fff !important;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+/* Days from other months (greyed out) */
+.non-current-month {
+  color: #bbb !important;
+}
+
+/* Highlighted event days */
+.event-date {
+  background-color: #c8e6c9 !important;
+  color: #1b5e20 !important;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+/* Event emoji */
+.event-indicator {
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Fade-in animation for event details */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
