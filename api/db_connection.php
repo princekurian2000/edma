@@ -1,8 +1,8 @@
 <?php
 $host = 'mysql-200-139.mysql.prositehosting.net';
 $db   = 'edma';
-$user = 'pkvjcet';
-$pass = 'Edunet123*';
+$user = 'username';
+$pass = 'Password';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
